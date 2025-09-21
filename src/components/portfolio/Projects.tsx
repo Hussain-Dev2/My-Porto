@@ -12,7 +12,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
       tech: ["React", "Next.js", "Postgress", "Strapi"],
   github: "https://github.com/Hussain-Dev2",
-  live: "#"
+  live: "https://doctorapp-kohl.vercel.app/"
     },
     {
       id: 2,
