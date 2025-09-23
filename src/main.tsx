@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 const rootElement = document.getElementById("root");
 if (rootElement) {
@@ -11,3 +12,4 @@ if (rootElement) {
 
 // Initialize Vercel Analytics
 inject();
+injectSpeedInsights();
