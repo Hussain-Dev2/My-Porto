@@ -68,35 +68,40 @@ const Skills = () => {
                 key={category.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group"
+                whileHover={{ y: -5 }}
+                className="group h-full"
               >
-                <div className="p-6 bg-card rounded-lg border hover:shadow-elegant transition-smooth h-full">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg mr-3 group-hover:bg-primary/20 transition-smooth">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold text-lg text-foreground">
-                      {category.title}
-                    </h3>
-                  </div>
+                <div className="p-6 bg-card/50 backdrop-blur-sm rounded-xl border hover:shadow-elegant hover:border-primary/50 transition-all duration-300 h-full relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
-                  {category.description && (
-                    <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                      {category.description}
-                    </p>
-                  )}
-                  
-                  <div className="space-y-2">
-                    {category.skills.map((skill) => (
-                      <div
-                        key={skill}
-                        className="px-3 py-1 bg-muted rounded-md text-sm text-muted-foreground hover:bg-primary/10 hover:text-primary transition-smooth cursor-default"
-                      >
-                        {skill}
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="p-3 bg-primary/10 rounded-lg mr-3 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                        <Icon className="w-6 h-6 text-primary" />
                       </div>
-                    ))}
+                      <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                        {category.title}
+                      </h3>
+                    </div>
+                    
+                    {category.description && (
+                      <p className="text-sm text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground/80 transition-colors">
+                        {category.description}
+                      </p>
+                    )}
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {category.skills.map((skill) => (
+                        <div
+                          key={skill}
+                          className="px-3 py-1 bg-muted rounded-md text-sm text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 cursor-default"
+                        >
+                          {skill}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>

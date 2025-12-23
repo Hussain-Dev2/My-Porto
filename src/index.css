@@ -141,3 +141,17 @@ All colors MUST be HSL.
     transition: var(--transition-smooth);
   }
 }
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  ::selection {
+    background-color: hsl(214 84% 56% / 0.3);
+    color: hsl(214 84% 56%);
+  }
+}

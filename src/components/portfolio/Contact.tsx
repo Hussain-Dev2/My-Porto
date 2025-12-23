@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -20,7 +21,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
+    setIsSubmitting(true);
+    
     emailjs.send("service_qetm02f" ,"template_50v6mrv" ,{
        from_name: formData.name,
       from_email: formData.email,
@@ -32,17 +34,16 @@ const Contact = () => {
       title: "Message sent!",
       description: "Thank you for your message. I'll get back to you soon.",
     });
+      setFormData({ name: "", email: "", message: "" });
   }).catch((error) => {
     toast({
             title: "Error",
             description: "Failed to send message. Please try again.",
             variant: "destructive",
           });
-  })
-    
-    
-    
-    setFormData({ name: "", email: "", message: "" });
+  }).finally(() => {
+    setIsSubmitting(false);
+  });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -129,7 +130,7 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Card className="shadow-elegant">
+            <Card className="shadow-elegant border-none bg-card/50 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
@@ -147,6 +148,8 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
+                      className="bg-background/50"
                     />
                   </div>
                   
@@ -160,6 +163,8 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
+                      className="bg-background/50"
                     />
                   </div>
                   
@@ -173,11 +178,22 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
+                      className="bg-background/50"
                     />
                   </div>
                   
-                  <Button type="submit" variant="hero" className="w-full">
-                    Send Message
+                  <Button type="submit" variant="hero" className="w-full relative" disabled={isSubmitting}>
+                    {isSubmitting ? (
+                      <>
+                        <span className="opacity-0">Send Message</span>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                        </div>
+                      </>
+                    ) : (
+                      "Send Message"
+                    )}
                   </Button>
                 </form>
               </CardContent>

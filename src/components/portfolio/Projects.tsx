@@ -32,6 +32,15 @@ const Projects = () => {
   github: "https://github.com/Hussain-Dev2",
   live: "#"
     },
+    {
+      id: 4,
+      title: "Habit App",
+      description: "A comprehensive habit tracking application to help you build and maintain positive habits.",
+      image: "/habitapp.png",
+      tech: ["React", "Next.js", "Tailwind"],
+      github: "https://github.com/Hussain-Dev2/habit-app-",
+      live: "https://habit-app-tawny.vercel.app/"
+    },
   ];
 
   return (
@@ -58,34 +67,40 @@ const Projects = () => {
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className="h-full"
             >
-              <Card className="h-full hover:shadow-elegant transition-smooth group">
-                <div className="relative overflow-hidden rounded-t-lg">
+              <Card className="h-full border-none shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden bg-card/50 backdrop-blur-sm group flex flex-col">
+                <div className="relative overflow-hidden h-48">
+                  <div className="absolute inset-0 bg-primary/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Button variant="secondary" size="sm" className="opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                      View Details
+                    </Button>
+                  </div>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-smooth group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-smooth" />
                 </div>
                 
                 <CardHeader>
-                  <CardTitle className="text-xl font-semibold">
+                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground">
+                  <CardDescription className="text-muted-foreground line-clamp-3">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
                 
-                <CardContent>
+                <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                        className="px-2.5 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded-full"
                       >
                         {tech}
                       </span>
@@ -93,16 +108,16 @@ const Projects = () => {
                   </div>
                 </CardContent>
                 
-                <CardFooter className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
+                <CardFooter className="flex gap-3 pt-0 mt-auto">
+                  <Button variant="outline" size="sm" asChild className="flex-1 group/btn">
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4" />
+                      <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
                       Code
                     </a>
                   </Button>
-                  <Button variant="default" size="sm" asChild>
+                  <Button variant="default" size="sm" asChild className="flex-1 group/btn">
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
                       Live Demo
                     </a>
                   </Button>
