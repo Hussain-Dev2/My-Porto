@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logoImage from "@/assets/hussain-dev-logo.png";
+import logoImage from "@/assets/nexa-logo.png";
 
 const About = () => {
   return (
@@ -28,11 +28,11 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative w-80 h-80 mx-auto lg:mx-0">
+            <div className="relative w-full max-w-md mx-auto lg:mx-0">
               <motion.div 
-                className="absolute inset-0 bg-gradient-primary rounded-full opacity-20 blur-2xl"
+                className="absolute inset-0 bg-gradient-primary rounded-2xl opacity-20 blur-2xl"
                 animate={{ 
-                  scale: [1, 1.1, 1],
+                  scale: [1, 1.05, 1],
                   opacity: [0.2, 0.3, 0.2]
                 }}
                 transition={{
@@ -43,13 +43,12 @@ const About = () => {
               />
               <motion.img
                 src={logoImage}
-                alt="Hussain-Dev Logo"
-                className="relative z-10 w-full h-full object-contain p-8 bg-background/10 backdrop-blur-sm rounded-full shadow-elegant border border-white/20"
+                alt="NEXA-DIGITAL Logo"
+                className="relative z-10 w-full h-auto rounded-2xl shadow-elegant border border-white/10"
                 whileHover={{ 
-                  scale: 1.05,
-                  rotate: [0, 5, -5, 0]
+                  scale: 1.02
                 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.4 }}
               />
             </div>
           </motion.div>

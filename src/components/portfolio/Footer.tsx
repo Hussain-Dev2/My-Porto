@@ -34,7 +34,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
-              Hussain
+              NEXA-DIGITAL
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Crafting digital experiences through code and design. Let's build something amazing together.
@@ -103,7 +103,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="border-t mt-8 pt-8 text-center text-muted-foreground"
         >
-          <p>&copy; {new Date().getFullYear()} Hussain. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NEXA-DIGITAL. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

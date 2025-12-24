@@ -1,4 +1,5 @@
 import { Toaster } from "@/components/ui/toaster";
+import { Particles } from "@/components/ui/Particles";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -58,6 +59,14 @@ const App = () => (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <TooltipProvider>
         <ScrollProgress />
+        <div className="fixed inset-0 z-50 pointer-events-none">
+          <Particles
+            className="w-full h-full"
+            quantity={200}
+            staticity={30}
+            ease={50}
+          />
+        </div>
         <Toaster />
         <Sonner />
         <BrowserRouter>
