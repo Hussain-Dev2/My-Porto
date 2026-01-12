@@ -56,7 +56,7 @@ const Skills = () => {
             Skills & Expertise
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+            Technologies and tools we use to bring ideas to life
           </p>
         </motion.div>
 

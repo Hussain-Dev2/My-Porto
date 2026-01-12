@@ -5,24 +5,24 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Independent Full-Stack Developer",
-      company: "Self-Employed / Freelance",
+      role: "Full-Stack Development",
+      company: "NEXA-DIGITAL",
       duration: "2024 - Present",
-      description: "Designed and developed comprehensive full-stack applications including 'Habit App' and 'Doctor-Appoint'. Managed the entire lifecycle from database schema design (PostgreSQL) to frontend implementation (React/Next.js) and deployment."
+      description: "Delivering comprehensive full-stack applications including 'Habit App' and 'Doctor-Appoint'. Managing the entire lifecycle from database schema design (PostgreSQL) to frontend implementation (React/Next.js) and deployment."
     },
     {
       id: 2,
-      role: "Automation Specialist",
-      company: "Freelance Projects",
+      role: "Automation Solutions",
+      company: "Client Projects",
       duration: "2023 - 2024",
-      description: "Created custom automation workflows using N8N to streamline tasks. Specialized in integrating disparate APIs and services to solve real-world efficiency problems."
+      description: "Creating custom automation workflows using N8N to streamline tasks. Specializing in integrating disparate APIs and services to solve real-world efficiency problems."
     },
     {
       id: 3,
-      role: "Frontend Developer",
-      company: "Personal Portfolio & Open Source",
+      role: "Frontend Engineering",
+      company: "Open Source & R&D",
       duration: "2023",
-      description: "Mastered modern UI/UX principles using Tailwind CSS and Framer Motion. Focused on building responsive, accessible, and highly interactive web interfaces."
+      description: "Mastering modern UI/UX principles using Tailwind CSS and Framer Motion. Focused on building responsive, accessible, and highly interactive web interfaces."
     }
   ];
 
@@ -40,7 +40,7 @@ const Experience = () => {
             Work Experience
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            My professional journey and career milestones
+            Our professional journey and career milestones
           </p>
         </motion.div>
 

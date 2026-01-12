@@ -50,7 +50,7 @@ const Footer = () => {
           >
             <h4 className="font-semibold mb-4 text-foreground">Quick Links</h4>
             <nav className="space-y-2">
-              {['About', 'Projects', 'Skills', 'Contact'].map((item) => (
+              {['About', 'Projects', 'Skills', 'Blog', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -59,6 +59,10 @@ const Footer = () => {
                   {item}
                 </a>
               ))}
+              <div className="pt-4 space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary transition-smooth">Privacy Policy</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary transition-smooth">Terms of Service</a>
+              </div>
             </nav>
           </motion.div>
 

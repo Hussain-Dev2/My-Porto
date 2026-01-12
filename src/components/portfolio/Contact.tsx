@@ -32,7 +32,7 @@ const Contact = () => {
   ).then(() => {
       toast({
       title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
+      description: "Thank you for your message. We'll get back to you soon.",
     });
       setFormData({ name: "", email: "", message: "" });
   }).catch((error) => {
@@ -85,7 +85,7 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always interested in new opportunities, whether it's a full-time position, 
+                We are always interested in new opportunities, whether it's a full-time position, 
                 freelance project, or just a chat about technology. Feel free to reach out!
               </p>
             </div>
@@ -134,7 +134,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and we'll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>

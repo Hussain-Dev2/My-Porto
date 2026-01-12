@@ -41,6 +41,42 @@ const Projects = () => {
       github: "https://github.com/Hussain-Dev2/habit-app-",
       live: "https://habit-app-tawny.vercel.app/"
     },
+    {
+      id: 5,
+      title: "E-Commerce Platform",
+      description: "A fully functional e-commerce facility with cart management, payment gateway integration, and order tracking.",
+      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop",
+      tech: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
+      github: "https://github.com/Hussain-Dev2",
+      live: "#"
+    },
+    {
+      id: 6,
+      title: "Task Management Dashboard",
+      description: "Collaborative task management tool for teams, featuring real-time updates, kanban boards, and progress analytics.",
+      image: "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=500&h=300&fit=crop",
+      tech: ["React", "Firebase", "Tailwind CSS", "Redux"],
+      github: "https://github.com/Hussain-Dev2",
+      live: "#"
+    },
+    {
+      id: 7,
+      title: "AI Content Generator",
+      description: "SaaS application leveraging OpenAI API to help users generate blog posts, social media captions, and marketing copy.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
+      tech: ["Next.js", "OpenAI API", "TypeScript", "Vercel"],
+      github: "https://github.com/Hussain-Dev2",
+      live: "#"
+    },
+    {
+      id: 8,
+      title: "Real Estate Portal",
+      description: "Property listing platform with advanced filtering, map integration, and virtual tour capabilities for agents and buyers.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
+      tech: ["React", "Google Maps API", "Node.js", "MongoDB"],
+      github: "https://github.com/Hussain-Dev2",
+      live: "#"
+    },
   ];
 
   return (
@@ -57,7 +93,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A collection of projects that showcase my skills and passion for development
+            A collection of projects that showcase our skills and passion for development
           </p>
         </motion.div>
 

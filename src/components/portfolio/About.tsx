@@ -13,7 +13,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            About Me
+            About Us
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Passionate about creating seamless digital experiences through code and design
@@ -62,38 +62,30 @@ const About = () => {
           >
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Hello! I'm Hussain
+                Hello! We are NEXA-DIGITAL
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I'm a passionate full-stack developer and N8N Automation Expert with 1 year of experience 
+                We are a passionate team of full-stack developers and N8N Automation Experts with extensive experience 
                 creating digital solutions that combine beautiful design with robust functionality.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                My journey in tech started with a curiosity for how things work, and it has evolved into 
+                Our journey in tech started with a curiosity for how things work, and it has evolved into 
                 a career focused on building user-centered applications that solve real-world problems.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or sharing my knowledge through technical writing and mentorship.
+                When we are not coding, you can find us exploring new technologies, contributing to open-source 
+                projects, or sharing our knowledge through technical writing and mentorship.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <motion.div 
-                className="p-4 bg-card rounded-lg border hover:shadow-glow transition-smooth"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <h4 className="font-semibold text-primary mb-2">Experience</h4>
-                <p className="text-2xl font-bold text-foreground">1 Year</p>
-              </motion.div>
+            <div className="grid grid-cols-1 gap-4">
               <motion.div 
                 className="p-4 bg-card rounded-lg border hover:shadow-glow transition-smooth"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <h4 className="font-semibold text-primary mb-2">Projects</h4>
-                <p className="text-2xl font-bold text-foreground">3 Completed</p>
+                <p className="text-2xl font-bold text-foreground">7+ Completed</p>
               </motion.div>
             </div>
           </motion.div>
