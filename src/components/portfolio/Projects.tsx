@@ -11,26 +11,26 @@ const Projects = () => {
       description: "A modern appointment scheduling solution built with React, Node.js, and Stripe integration. Features include user authentication, payment processing, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
       tech: ["React", "Next.js", "Postgress", "Strapi"],
-  github: "https://github.com/Hussain-Dev2",
-  live: "https://doctorapp-kohl.vercel.app/"
+      github: "https://github.com/Hussain-Dev2",
+      live: "https://doctorapp-kohl.vercel.app/"
     },
     {
       id: 2,
-      title: "N8N Automation Simple Accountant",
-      description: "A simple accounting automation tool built with N8N, allowing users to automate their financial workflows with ease.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      tech: ["N8N", "JavaScript", "API Integration"],
-  github: "https://github.com/Hussain-Dev2",
-  live: "#"
+      title: "NexaDigital - Image & PDF Tools",
+      description: "A comprehensive suite of free, in-browser tools for compressing, converting, editing images, and managing PDFs.",
+      image: "/Nexa-Digital.png",
+      tech: ["Next.js", "React", "Tailwind CSS"],
+      github: "https://github.com/Hussain-Dev2/nexa-next.git",
+      live: "https://nexadigital.dev/"
     },
     {
       id: 3,
-      title: "Order Management System",
-      description: "A responsive weather dashboard displaying real-time weather data, forecasts, and interactive maps with location-based services.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      tech: ["Vue.js", "Express.js", "OpenWeather API", "Chart.js"],
-  github: "https://github.com/Hussain-Dev2",
-  live: "#"
+      title: "DebtTrack - Client Management",
+      description: "A client management dashboard enabling users to track clients, monitor payments, and manage active projects efficiently.",
+      image: "/debttrack-dashboard.png",
+      tech: ["Next.js", "React", "Dashboard"],
+      github: "https://github.com/Hussain-Dev2/DashBord.git",
+      live: "https://dashboard.nexadigital.dev/"
     },
     {
       id: 4,
@@ -40,42 +40,6 @@ const Projects = () => {
       tech: ["React", "Next.js", "Tailwind"],
       github: "https://github.com/Hussain-Dev2/habit-app-",
       live: "https://habit-app-tawny.vercel.app/"
-    },
-    {
-      id: 5,
-      title: "E-Commerce Platform",
-      description: "A fully functional e-commerce facility with cart management, payment gateway integration, and order tracking.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop",
-      tech: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-      github: "https://github.com/Hussain-Dev2",
-      live: "#"
-    },
-    {
-      id: 6,
-      title: "Task Management Dashboard",
-      description: "Collaborative task management tool for teams, featuring real-time updates, kanban boards, and progress analytics.",
-      image: "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=500&h=300&fit=crop",
-      tech: ["React", "Firebase", "Tailwind CSS", "Redux"],
-      github: "https://github.com/Hussain-Dev2",
-      live: "#"
-    },
-    {
-      id: 7,
-      title: "AI Content Generator",
-      description: "SaaS application leveraging OpenAI API to help users generate blog posts, social media captions, and marketing copy.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
-      tech: ["Next.js", "OpenAI API", "TypeScript", "Vercel"],
-      github: "https://github.com/Hussain-Dev2",
-      live: "#"
-    },
-    {
-      id: 8,
-      title: "Real Estate Portal",
-      description: "Property listing platform with advanced filtering, map integration, and virtual tour capabilities for agents and buyers.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
-      tech: ["React", "Google Maps API", "Node.js", "MongoDB"],
-      github: "https://github.com/Hussain-Dev2",
-      live: "#"
     },
   ];
 

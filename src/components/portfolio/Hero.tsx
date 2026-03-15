@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
 import { useEffect, useState } from "react";
 
 const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
@@ -33,33 +32,58 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden selection:bg-primary/30">
-      {/* Dynamic Background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 z-0"
-          style={{ backgroundImage: `url(${heroImage})` }}
+      {/* Logo */}
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute top-6 left-6 md:top-10 md:left-10 z-50 flex items-center gap-3 decoration-none"
+      >
+        <div className="overflow-hidden rounded-xl border border-white/20 shadow-glow bg-background">
+          <img src="/Nexa.jpg" alt="Nexa Logo" className="h-12 w-12 md:h-16 md:w-16 object-cover" />
+        </div>
+      </motion.div>
+
+      {/* Dynamic Animated Background (Fallback for Spline) */}
+      <div className="absolute inset-0 overflow-hidden bg-background">
+        {/* Animated Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        
+        {/* Deep Tech Blue Glow */}
+        <motion.div 
+          animate={{ 
+            scale: [1, 1.1, 1],
+            opacity: [0.3, 0.5, 0.3], 
+          }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none"
         />
-
-
-        {/* Floating Gradients */}
+        
+        {/* Electric Cyan Glow */}
         <motion.div 
           animate={{ 
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3], 
-            rotate: [0, 180, 0]
+            opacity: [0.2, 0.4, 0.2],
+            x: [0, -50, 0],
+            y: [0, 50, 0]
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary/20 rounded-full blur-3xl mix-blend-screen"
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/2 -left-1/4 w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[100px] mix-blend-screen pointer-events-none"
         />
+
+        {/* Purple Accent Glow */}
         <motion.div 
           animate={{ 
             scale: [1, 1.5, 1],
-            opacity: [0.2, 0.4, 0.2],
-            x: [0, 100, 0] 
+            opacity: [0.15, 0.3, 0.15],
+            x: [0, 100, 0],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-accent/20 rounded-full blur-3xl"
+          className="absolute -bottom-1/4 left-1/3 w-[700px] h-[700px] bg-accent/20 rounded-full blur-[130px] mix-blend-screen pointer-events-none"
         />
+        
+        {/* Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background pointer-events-none" />
       </div>
       
       {/* Content */}

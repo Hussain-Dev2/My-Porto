@@ -45,3 +45,8 @@ dist-ssr
 *.sln
 *.sw?
 node_modules
+
+# AI Agent Files
+.agents/
+skills-lock.json
+spline_info.txt

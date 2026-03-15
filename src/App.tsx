@@ -56,7 +56,7 @@ const BackToTop = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <TooltipProvider>
         <ScrollProgress />
         <div className="fixed inset-0 z-50 pointer-events-none">
