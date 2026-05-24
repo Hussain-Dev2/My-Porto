@@ -142,7 +142,7 @@ const Hero = () => {
               />
             </Button>
             
-            <a href="/resume.pdf" download="Hussain_Resume.pdf">
+            <a href="/Hussein_Muthanna_CV_BW.pdf" download="Hussein_Muthanna_CV_BW.pdf">
               <Button variant="outline" size="lg" className="group border-primary/20 hover:border-primary/50">
                 <span className="flex items-center gap-2">
                   Download CV
