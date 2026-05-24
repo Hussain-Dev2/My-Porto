@@ -41,6 +41,78 @@ const Projects = () => {
       github: "https://github.com/Hussain-Dev2/habit-app-",
       live: "https://habit-app-tawny.vercel.app/"
     },
+    {
+      id: 5,
+      title: "Super Menu - Digital Restaurant Platform",
+      description: "A digital menu platform for Iraqi restaurants enabling customers to browse menus and order via WhatsApp. Built with Next.js and Supabase, featuring real-time data, restaurant management, and SEO-optimized menus for multiple restaurants.",
+      image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&h=300&fit=crop",
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+      github: "https://github.com/Hussain-Dev2/Super-Menu",
+      live: "https://super-menu-omega.vercel.app/"
+    },
+    {
+      id: 6,
+      title: "Wahid Iraq - Media Downloader",
+      description: "A multi-platform media downloader supporting YouTube, TikTok, Instagram, Twitter, Facebook, and more. Users can paste any link and download content with a single click.",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Hussain-Dev2/RDA",
+      live: "https://rda-rust.vercel.app/"
+    },
+    {
+      id: 7,
+      title: "Shawarma Nazo Land",
+      description: "A restaurant landing page with an interactive digital menu for Shawarma Nazo Land, allowing customers to view the menu and order via WhatsApp seamlessly.",
+      image: "https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&h=300&fit=crop",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Hussain-Dev2/Shawarma-Nazo-Land",
+      live: "https://shawarma-nazo-land.vercel.app/"
+    },
+    {
+      id: 8,
+      title: "Tabasco Al Sham",
+      description: "A restaurant landing page featuring a digital menu for Tabasco Al Sham, integrated with WhatsApp ordering for a smooth customer experience.",
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=300&fit=crop",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/Hussain-Dev2/Tabasco-Al-Sham",
+      live: "https://tabasco-al-sham.vercel.app/"
+    },
+    {
+      id: 9,
+      title: "Cliker App",
+      description: "An interactive clicker/counter application built with Next.js, designed for fun and engagement with a clean, responsive interface.",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=300&fit=crop",
+      tech: ["Next.js", "TypeScript", "CSS"],
+      github: "https://github.com/Hussain-Dev2/Clicker-App",
+      live: "https://clicker-app-taupe.vercel.app/"
+    },
+    {
+      id: 10,
+      title: "TLeg Dashboard - Service Bot",
+      description: "A management dashboard for Telegram service bots built with Express.js. Handles user management, service requests, and real-time bot analytics.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      tech: ["Express.js", "JavaScript", "Telegram Bot API"],
+      github: "https://github.com/Hussain-Dev2/tleg-dashboard",
+      live: "https://github.com/Hussain-Dev2/tleg-dashboard"
+    },
+    {
+      id: 11,
+      title: "TLYGRM Services Bot",
+      description: "An automated Telegram bot providing various services including media downloading, content management, and user interaction through an intuitive bot interface.",
+      image: "https://images.unsplash.com/photo-1611605651278-2cb2b5b540a0?w=500&h=300&fit=crop",
+      tech: ["JavaScript", "Node.js", "Telegram Bot API"],
+      github: "https://github.com/Hussain-Dev2/tlygrm_serves_bot",
+      live: "https://github.com/Hussain-Dev2/tlygrm_serves_bot"
+    },
+    {
+      id: 12,
+      title: "Nexa Digital - Social Media Marketing",
+      description: "A professional landing page for digital marketing services, showcasing social media management, content creation, and brand strategy offerings.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      tech: ["React", "Vite", "JavaScript", "CSS"],
+      github: "https://github.com/Hussain-Dev2/Landin_Page-SM",
+      live: "https://landin-page-sm.vercel.app/"
+    },
   ];
 
   return (

@@ -85,7 +85,7 @@ const About = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <h4 className="font-semibold text-primary mb-2">Projects</h4>
-                <p className="text-2xl font-bold text-foreground">7+ Completed</p>
+                <p className="text-2xl font-bold text-foreground">12 Projects</p>
               </motion.div>
             </div>
           </motion.div>
